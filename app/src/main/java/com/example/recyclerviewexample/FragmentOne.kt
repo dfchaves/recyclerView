@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-class FragmentOne: Fragment() {
+class FragmentOne : Fragment() {
 
     val TAG = "Fragment One"
 
