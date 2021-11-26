@@ -1,0 +1,20 @@
+{
+  "places":[
+    {
+      "name":"Bogotá",
+      "contactInfo":"Bogotá@gmail.com",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Bogot%C3%A1_Colpatria_Night.jpg",
+      "description": "This is a capital of Colombia"
+    },
+    {
+      "name":"Cali",
+      "contactInfo":"Cali@gmail.com",
+      "description": "This is a capital of Valle del Cauca"
+    },
+    {
+      "name":"Cartagena",
+      "contactInfo":"Cartagena@gmail.com",
+      "description": "This is a capital of Bolivar"
+    }
+  ]
+}
