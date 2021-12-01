@@ -1,17 +1,15 @@
 package com.example.recyclerviewexample
 
-import android.content.ClipDescription
-import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(
-    private var context: Context,
+    private var recyclerView: com.example.recyclerviewexample.RecyclerView,
     private var cityNames: ArrayList<String>,
     private var cityContacts: ArrayList<String>,
     private var cityDescription: ArrayList<String>,
@@ -23,12 +21,17 @@ class CustomAdapter(
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         // set the data in items
+        var TAG = "ADAPTER"
+        Log.d(TAG, "$cityNames")
+        Log.d(TAG, "$cityContacts")
+        Log.d(TAG, "$cityDescription")
+
         holder.name.text = cityNames[position]
         holder.contact.text = cityContacts[position]
         holder.description.text = cityDescription[position]
         // implement setOnClickListener event on item view.
         holder.itemView.setOnClickListener { // display a toast with person name on item click
-            Toast.makeText(context, cityNames[position], Toast.LENGTH_SHORT).show()
+            Toast.makeText(this.recyclerView.context, cityNames[position], Toast.LENGTH_SHORT).show()
         }
     }
 

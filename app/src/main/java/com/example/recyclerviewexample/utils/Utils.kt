@@ -5,11 +5,7 @@ import com.example.recyclerviewexample.R
 import java.io.IOException
 import java.nio.charset.Charset
 
-class Utils (val context: Context){
-    fun getFlowersList(): Array<String> {
-        return context.resources.getStringArray(R.array.flower_array)
-    }
-
+class Utils(val context: com.example.recyclerviewexample.RecyclerView){
     fun loadJsonFromAssets(context: Context, fileName: String): String {
         val json: String?
         try {
